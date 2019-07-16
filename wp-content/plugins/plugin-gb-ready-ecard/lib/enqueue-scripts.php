@@ -2,6 +2,38 @@
 
 namespace PETA\Plugin_GB_Ready_eCard;
 
+/**
+ * Gets this plugin's absolute directory path.
+ *
+ * @since  2.1.0
+ * @ignore
+ * @access private
+ *
+ * @return string
+ */
+function _get_plugin_directory() {
+	return __DIR__;
+}
+
+/**
+ * Gets this plugin's URL.
+ *
+ * @since  2.1.0
+ * @ignore
+ * @access private
+ *
+ * @return string
+ */
+function _get_plugin_url() {
+	static $plugin_url;
+
+	if ( empty( $plugin_url ) ) {
+		$plugin_url = plugins_url( null, __FILE__ );
+	}
+
+	return $plugin_url;
+}
+
 add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_editor_assets' );
 /**
  * Enqueue block editor only JavaScript and CSS.

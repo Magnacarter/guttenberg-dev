@@ -129,5 +129,15 @@ class Init_Plugin {
 	 */
 	public function init_autoloader() {
 		require_once 'lib/class-ecard-post-types.php';
+		require_once 'lib/enqueue-scripts.php';
+
+		// Register meta boxes
+		require_once 'lib/meta-boxes.php';
+
+		// Block Templates
+		require_once 'lib/block-templates.php';
+
+		// Dynamic Blocks
+		require_once 'blocks/12-dynamic/index.php';
 	}
 }
