@@ -1,0 +1,21 @@
+{
+	"name": "Plugin Placement",
+	"version": "3.0.0",
+	"download_url": "https://github.com/PETAF/Plugin-Placement/archive/master.zip",
+
+	"homepage": "https://github.com/PETAF/Plugin-Placement.git",
+	"requires": "4.5",
+	"tested": "5.2.1",
+	"last_updated": "2019-07-11",
+	"upgrade_notice": "Here's why you should upgrade...",
+
+	"author": "PETA",
+	"author_homepage": "https://www.peta.org/",
+
+	"sections": {
+		"description": "For managing the order of posts in various placement sections..",
+		"installation": "(Recommended) Installation instructions.",
+		"changelog": "(Recommended) Changelog. <p>This section will be displayed by default when the user clicks 'View version x.y.z details'.</p>",
+		"custom_section": "This is a custom section labeled 'Custom Section'."
+	},
+}
